@@ -4,6 +4,8 @@ import 'package:flutter_pos_printer_platform/flutter_pos_printer_platform.dart';
 import 'package:get_it/get_it.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
 
+import 'package:intl/intl.dart';
+
 import '../../../core/core.dart';
 import '../dio_service/dio_response.dart';
 import '../dio_service/dio_service.dart';
@@ -61,8 +63,12 @@ class PrinterService {
           width: PosTextSize.size3,
           align: PosAlign.center,
         ));
+
+    DateTime now = DateTime.now();
+    String dateTime = DateFormat("dd/MM-yyyy hh:mm:ss").format(now);
+
     bytes += generator.text('');
-    bytes += generator.text('07/12/2022 16:00',
+    bytes += generator.text(dateTime,
         styles: const PosStyles(
           align: PosAlign.center,
         ));
