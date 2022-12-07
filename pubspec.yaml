@@ -1,0 +1,37 @@
+name: deeplink
+description: A new Flutter project.
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.18.5 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_dynamic_links: ^5.0.7
+  cupertino_icons: ^1.0.2
+  esc_pos_utils: ^1.1.0
+  dio: ^4.0.6
+  get_it: ^7.2.0
+  shared_preferences: ^2.0.15
+  google_fonts: ^3.0.1
+  internet_connection_checker: ^1.0.0+1
+  minimize_app: ^0.1.1
+  move_to_background: ^1.0.2
+
+  flutter_pos_printer_platform:
+    git:
+      url: https://github.com/arthas1888/flutter_pos_printer_platform.git
+      ref: main
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
