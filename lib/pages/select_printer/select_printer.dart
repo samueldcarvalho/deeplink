@@ -89,15 +89,15 @@ class _SelectPrinterState extends State<SelectPrinter> {
     bytes += generator.text('Seja bem-vindo(a)!',
         styles: const PosStyles(
           align: PosAlign.center,
-          height: PosTextSize.size2,
-          width: PosTextSize.size2,
+          height: PosTextSize.size1,
+          width: PosTextSize.size1,
         ));
     bytes += generator.text('');
     bytes += generator.text('SENHA:',
         styles: const PosStyles(
           align: PosAlign.center,
-          height: PosTextSize.size2,
-          width: PosTextSize.size2,
+          height: PosTextSize.size3,
+          width: PosTextSize.size3,
         ));
     bytes += generator.text('NL0013',
         styles: const PosStyles(

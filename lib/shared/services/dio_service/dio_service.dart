@@ -5,7 +5,8 @@ import 'package:dio/native_imp.dart';
 import 'dio_interceptors_service.dart';
 
 class DioService extends DioForNative {
-  String urlAPI = "http://homolog.fila.autolac.com.br:5000/api";
+  String urlAPI =
+      "http://10.10.10.113:5000/api"; // "http://homolog.fila.autolac.com.br:5000/api";
 
   DioService() {
     options.baseUrl = urlAPI;

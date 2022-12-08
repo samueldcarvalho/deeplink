@@ -65,7 +65,7 @@ class PrinterService {
         ));
 
     DateTime now = DateTime.now();
-    String dateTime = DateFormat("dd/MM-yyyy hh:mm:ss").format(now);
+    String dateTime = DateFormat("dd/MM/yyyy HH:mm:ss").format(now);
 
     bytes += generator.text('');
     bytes += generator.text(dateTime,
